@@ -96,12 +96,13 @@
 				"foreground": "#6aab73"
 			}
 		},
+	
 		
 		// Keywords and storage
 		{
 			"scope": ["keyword", "storage.type", "storage.modifier"],
 			"settings": {
-				"foreground": "#ff8c00"
+				"foreground": "#cf8e6d"
 			}
 		},
 		
@@ -184,9 +185,15 @@
 		
 		// Variables and parameters
 		{
-			"scope": "variable.other.go",
+			"scope": "variable.other.property.go",
 			"settings": {
 				"foreground": "#bcbec4"
+			}
+		},
+		{
+			"scope": "variable.other.go",
+			"settings": {
+				"foreground": "#aebf7e"
 			}
 		},
 		{
@@ -198,19 +205,31 @@
 		
 		// Functions and function calls
 		{
-			"scope": "entity.name.function.go",
+			"scope": [
+				"entity.name.function.go", 
+			],
 			"settings": {
 				"foreground": "#56a8f5"
 			}
 		},
 		{
-			"scope": "support.function.go",
+			"scope": [
+				"support.function.go",
+				"entity.name.function.go.method",
+				"entity.name.function.support.go",
+				"variable.function.go"
+			],
 			"settings": {
 				"foreground": "#a67f59"
 			}
 		},
 		{
-			"scope": "meta.function-call.go",
+			"scope": [
+				"meta.function-call.go", 
+				"support.function.any-method.go",
+				"meta.method-call.go",
+				"meta.method.go"
+			],
 			"settings": {
 				"foreground": "#a67f59"
 			}
@@ -238,7 +257,10 @@
 		
 		// Types and packages
 		{
-			"scope": "entity.name.package.go",
+			"scope": [
+				"entity.name.package.go",
+				"support.type.package.go"
+			],
 			"settings": {
 				"foreground": "#b8bb26"
 			}
@@ -253,12 +275,6 @@
 			"scope": "support.type.builtin.go",
 			"settings": {
 				"foreground": "#cf8e6d"
-			}
-		},
-		{
-			"scope": "support.type.package.go",
-			"settings": {
-				"foreground": "#b8bb26"
 			}
 		},
 		
