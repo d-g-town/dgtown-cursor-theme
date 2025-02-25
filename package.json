@@ -1,0 +1,21 @@
+{
+    "name": "dgtown-theme",
+    "displayName": "dgtown theme",
+    "description": "A dgtown theme for VS Code",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.50.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "dgtown",
+                "uiTheme": "vs-dark",
+                "path": "./themes/dgtown.json"
+            }
+        ]
+    }
+}
