@@ -185,15 +185,12 @@
 		
 		// Variables and parameters
 		{
-			"scope": "variable.other.property.go",
+			"scope": [
+				"variable.other.property.go",
+				"variable.other.go"
+			],
 			"settings": {
 				"foreground": "#bcbec4"
-			}
-		},
-		{
-			"scope": "variable.other.go",
-			"settings": {
-				"foreground": "#aebf7e"
 			}
 		},
 		{
@@ -220,7 +217,7 @@
 				"variable.function.go"
 			],
 			"settings": {
-				"foreground": "#a67f59"
+				"foreground": "#b09d79"
 			}
 		},
 		{
