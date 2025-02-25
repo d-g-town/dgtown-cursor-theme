@@ -69,7 +69,8 @@
 		"terminal.foreground": "#d4d4d4"
 	},
 	"tokenColors": [
-		// General syntax highlighting
+		// ========== GENERAL SYNTAX HIGHLIGHTING ==========
+		// Embedded code
 		{
 			"scope": [
 				"meta.embedded",
@@ -79,30 +80,40 @@
 				"foreground": "#d4d4d4"
 			}
 		},
+		
+		// Comments
 		{
 			"scope": "comment",
 			"settings": {
 				"foreground": "#a0a0a0"
 			}
 		},
+		
+		// Strings
 		{
 			"scope": "string",
 			"settings": {
-				"foreground": "#6aab73d0"
+				"foreground": "#6aab73"
 			}
 		},
+		
+		// Keywords and storage
 		{
 			"scope": ["keyword", "storage.type", "storage.modifier"],
 			"settings": {
 				"foreground": "#ff8c00"
 			}
 		},
+		
+		// Variables
 		{
 			"scope": "variable",
 			"settings": {
 				"foreground": "#bcbec4"
 			}
 		},
+		
+		// Constants
 		{
 			"scope": "constant.numeric",
 			"settings": {
@@ -115,10 +126,12 @@
 				"foreground": "#569cd6"
 			}
 		},
+		
+		// Functions, types and classes
 		{
 			"scope": "entity.name.function",
 			"settings": {
-				"foreground": "#4da6ff"
+				"foreground": "#6faebd"
 			}
 		},
 		{
@@ -134,6 +147,14 @@
 			}
 		},
 		{
+			"scope": "support.function",
+			"settings": {
+				"foreground": "#a67f59"
+			}
+		},
+		
+		// Attributes and errors
+		{
 			"scope": "entity.other.attribute-name",
 			"settings": {
 				"foreground": "#9cdcfe"
@@ -145,18 +166,13 @@
 				"foreground": "#f44747"
 			}
 		},
-		{
-			"scope": "support.function",
-			"settings": {
-				"foreground": "#a67f59"
-			}
-		},
 
-		// Go-specific syntax highlighting
+		// ========== GO-SPECIFIC SYNTAX HIGHLIGHTING ==========
+		// Keywords and operators
 		{
 			"scope": ["keyword.control.go", "keyword.go"],
 			"settings": {
-				"foreground": "#cc7832"
+				"foreground": "#cf8e6d"
 			}
 		},
 		{
@@ -165,6 +181,8 @@
 				"foreground": "#d4d4d4"
 			}
 		},
+		
+		// Variables and parameters
 		{
 			"scope": "variable.other.go",
 			"settings": {
@@ -177,6 +195,8 @@
 				"foreground": "#bcbec4"
 			}
 		},
+		
+		// Functions and function calls
 		{
 			"scope": "entity.name.function.go",
 			"settings": {
@@ -195,10 +215,12 @@
 				"foreground": "#a67f59"
 			}
 		},
+		
+		// Strings, constants and literals
 		{
 			"scope": "string.quoted.double.go",
 			"settings": {
-				"foreground": "#ce9178"
+				"foreground": "#6aab73"
 			}
 		},
 		{
@@ -213,6 +235,8 @@
 				"foreground": "#569cd6"
 			}
 		},
+		
+		// Types and packages
 		{
 			"scope": "entity.name.package.go",
 			"settings": {
@@ -226,21 +250,23 @@
 			}
 		},
 		{
-			"scope": "comment.line.double-slash.go",
-			"settings": {
-				"foreground": "#7a7e85"
-			}
-		},
-		{
 			"scope": "support.type.builtin.go",
 			"settings": {
-				"foreground": "#ff8c00c7"
+				"foreground": "#cf8e6d"
 			}
 		},
 		{
 			"scope": "support.type.package.go",
 			"settings": {
 				"foreground": "#b8bb26"
+			}
+		},
+		
+		// Comments
+		{
+			"scope": "comment.line.double-slash.go",
+			"settings": {
+				"foreground": "#7a7e85"
 			}
 		}
 	]
