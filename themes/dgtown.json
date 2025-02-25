@@ -187,10 +187,17 @@
 		{
 			"scope": [
 				"variable.other.property.go",
-				"variable.other.go"
 			],
 			"settings": {
 				"foreground": "#bcbec4"
+			}
+		},
+		{
+			"scope": [
+				"variable.other.go"
+			],
+			"settings": {
+				"foreground": "#b3b39e"
 			}
 		},
 		{
